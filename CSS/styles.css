@@ -132,6 +132,13 @@ img {
 
 .header-contacts .link {
   color: #757575;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .action:hover,
@@ -166,8 +173,15 @@ img {
 
 /* =================ГЕРОЙ===================== */
 .hero {
+  max-width: 1600px;
   padding: 200px 0;
-  background-color: var(--footer-bgc);
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   text-align: center;
 }
 
@@ -219,6 +233,22 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.advantages-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin: 0 auto 30px;
+  background-color: var(--secondary-bgc);
+  border-radius: 4px;
+}
+
+.advantages-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-title {
@@ -303,13 +333,14 @@ img {
 .team-member-profesion {
   font-weight: 400;
   color: var(--paragraph-color);
+  margin-bottom: 16px;
 }
 
 .team-title {
   margin-bottom: 50px;
 }
 
-.team .list {
+.team .team-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -332,6 +363,38 @@ img {
 
 .team-member {
   margin-bottom: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.list-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-social-link .link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  fill: #ffffff;
+}
+
+.list-social-link .link:hover {
+  background-color: var(--action-color);
+  fill: currentColor;
+}
+
+.list-social-link > .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* КОНЕЦ ВОЗМОЖНОСТИ и КОМАНДА */
