@@ -131,6 +131,7 @@ img {
 }
 
 .header-contacts .link {
+  padding: 5px 0;
   color: #757575;
   display: flex;
   align-items: center;
@@ -287,7 +288,8 @@ img {
 
 /* ============ВОЗМОЖНОСТИ и КОМАНДА==============*/
 .abilities-title,
-.team-title {
+.team-title,
+.regular-customers-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -368,7 +370,6 @@ img {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
 }
 
 .list-social-link {
@@ -383,13 +384,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: transparent;
   border-radius: 50%;
-  fill: #ffffff;
+  fill: #afb1b8;
 }
 
-.list-social-link .link:hover {
+.list-social-link .link:hover,
+.list-social-link .link:focus {
   background-color: var(--action-color);
+  color: #ffffff;
   fill: currentColor;
 }
 
@@ -398,6 +401,71 @@ img {
 }
 
 /* КОНЕЦ ВОЗМОЖНОСТИ и КОМАНДА */
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.regular-customers {
+  padding: 94px 0;
+}
+
+.regular-customers-item > .link {
+  display: block;
+  /* padding: 25px 35px; */
+  fill: #afb1b8;
+}
+
+.first-link {
+  padding: 21px 64px;
+}
+
+.second-link {
+  padding: 20px 66px;
+}
+
+.third-link {
+  padding: 25px 65px;
+}
+
+.fourth-link {
+  padding: 25px 46px;
+}
+
+.fifth-link {
+  padding: 23px 56px;
+}
+
+.sixth-link {
+  padding: 23px 42px;
+}
+
+.regular-customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * (var(--primary-gap)));
+  margin-left: calc(-1 * (var(--primary-gap)));
+}
+
+.regular-customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin-top: var(--primary-gap);
+  margin-left: var(--primary-gap);
+  width: 170px;
+  height: 90px;
+}
+
+.regular-customers-item > .action:hover,
+.regular-customers-item > .action:focus,
+.regular-customers-item:hover,
+.regular-customers-item:focus {
+  color: var(--action-color);
+  border-color: var(--action-color);
+  fill: currentColor;
+}
+
+/* КОНЕЦ ПОСТОЯННЫЕ КЛИЕНТЫ */
 
 /* ПОРТФОЛИО */
 .filter-btn {
@@ -480,6 +548,11 @@ img {
   border-top: none;
 }
 
+.projects-list-item:hover,
+.projects-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* КОНЕЦ ПОРТФОЛИО */
 
 /* ПОДВАЛ */
@@ -513,5 +586,29 @@ img {
 
 .address .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-part {
+  margin-left: 70px;
+}
+
+.join-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1721;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join-part .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 /* КОНЕЦ ПОДВАЛА */
